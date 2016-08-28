@@ -1,4 +1,4 @@
-# _Ping Pong_
+# _Order Pizza_
 
 #### _Website that lets user "order pizza" and see the cost based on toppings and size. An individual project for Epicodus practicing BDD and JS logic; , August 26, 2016_
 
@@ -6,7 +6,15 @@
 
 ## Description
 
+_This website takes input from the user to be able to create a pizza of their choice. They are able to input the size of the pizza and its toppings. Accordingly the price of the pizza will change with the user inputs as described in the following specifications:_
 
+* _The program doesn't let non-numerical characters into the form._
+  * _Example Input: a_
+  * _Example Output: not allowed_
+
+* _The program returns up to the number inputted a list of the same numbers if it is less than 3._
+  * _Example Input: 2_
+  * _Example Output: 1, 2_
 
 
 ## Setup/Installation Requirements
