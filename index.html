@@ -12,7 +12,7 @@
     <h1>Welcome to Trivassi's Pizza Shop</h1>
     <h3>Order your pizza now!</h3>
     <div class="container">
-      <form id="number">
+      <form id="order">
         <div class="form-group">
           <label for="name">Name:</label>
           <input id="name" class="form-control" type="text">
@@ -29,6 +29,46 @@
           <option>Large</option>
         </select>
         </div>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Choose as many toppings as you'd like($1 per topping)</legend>
+            <div class="toppingsForm">
+              <label for="extraCheese">Extra Cheese</label>
+              <input type="checkbox" name="topping" id="extraCheese" value="extraCheese">
+              <label for="pepperoni">Pepperoni</label>
+              <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+              <label for="ham">Ham</label>
+              <input type="checkbox" name="topping" id="ham" value="ham">
+              <label for="pineapple">Pineapple</label>
+              <input type="checkbox" name="topping" id="pineapple" value="pineapple">
+              <label for="mushrooms">Mushrooms</label>
+              <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+              <label for="sausage">Sausage</label>
+              <input type="checkbox" name="topping" id="sausage" value="sausage">
+            </div>
+        </fieldset>
+        <!-- <div class="row">
+          <div class="col-md-3">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="standard" class="topping" value="pineapple">Pineapple
+              </label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="standard" class="topping" value="ham">Ham
+              </label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="standard" class="topping" value="ham">Ham
+              </label>
+            </div>
+          </div>
+        </div> -->
         <!-- <div class="radio">
           <label>
             <input type="radio" name="question1" value="true" checked>Yes
@@ -37,11 +77,9 @@
             <input type="radio" name="question1" value="false">No
           </label><hr>
         </div> -->
-      </form>
-      <form id="button">
         <button type="submit" class="btn-success">Go!</button>
       </form>
-      <div>
+        <div>
         <ul id="list">
         </ul>
       </div>

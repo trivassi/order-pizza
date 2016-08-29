@@ -16,7 +16,15 @@ h1, h3 {
   color: white;
 }
 
-UL {
-  column-count:3; -moz-column-count:3; -webkit-column-count:3;
-  column-gap:2em; -moz-column-gap:2em; -webkit-column-gap:2em;
+legend {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.toppingsForm {
+  /*how to space checkboxes???*/
+text-align: center;
+font-size: 15px;
 }

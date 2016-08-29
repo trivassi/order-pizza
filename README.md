@@ -8,14 +8,21 @@
 
 _This website takes input from the user to be able to create a pizza of their choice. They are able to input the size of the pizza and its toppings. Accordingly the price of the pizza will change with the user inputs as described in the following specifications:_
 
-* _The program doesn't let non-numerical characters into the form._
-  * _Example Input: a_
-  * _Example Output: not allowed_
+* _The program takes the input of the user for name and address but will not return anything._
+  * _Example Input: Jim John, 123 Broadway St. New York, NY_
+  * _Example Output: N/A_
 
-* _The program returns up to the number inputted a list of the same numbers if it is less than 3._
-  * _Example Input: 2_
-  * _Example Output: 1, 2_
+* _The program takes the input of the users desired size of pizza to do math to calculate the price_
+  * _Example Input: "Medium"_
+  * _Example Output: Price: $8_
 
+* _The program takes the input of the users desired toppings to do math to calculate the price. Each topping is $1._
+  * _Example Input: "extra-cheese", "ham", "pineapple"_
+  * _Example Output: Price: $3_
+
+  * _After the user is done inputting his desired size and toppings. The total price is calculated._
+    * _Example Input: "Medium", "extra-cheese", "ham", "pineapple"_
+    * _Example Output: Price: $11_
 
 ## Setup/Installation Requirements
 
