@@ -14,11 +14,9 @@ Pizza.prototype.calcPrice = function () {
   } else if (this.size === "Large") {
     price += 10;
   }
-
   for (var i = 0; i < this.toppings.length; i++) {
     price +=1;
   }
-
   return price;
 }
 //front-end
@@ -27,19 +25,13 @@ $(document).ready(function(){
     event.preventDefault();
 
     var inputSize = $("#size-select").val();
-
     var inputTopping = $('.topping-option:checkbox:checked').map(function() {
       return this.value;
     }).get();
 
-    console.log(inputSize +" "+ inputTopping);
-
     var pizzaOrder = new Pizza(inputSize, inputTopping);
-    alert(pizzaOrder.calcPrice());
 
-    // $(".class").text(pizzaOrder.calcPrice);
     $(".cost").text("$"+pizzaOrder.calcPrice());
-
 
   });
 });
