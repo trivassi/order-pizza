@@ -5,13 +5,13 @@ function Pizza (size, toppings) {
 }
 
 Pizza.prototype.calcPrice = function () {
-  price = 0;
+  var price = 0;
 
-  if (this.size === "small") {
+  if (this.size === "Small") {
     price += 6;
-  } else if (this.size === "medium") {
+  } else if (this.size === "Medium") {
     price += 8;
-  } else if (this.size === "large") {
+  } else if (this.size === "Large") {
     price += 10;
   }
 
@@ -32,10 +32,13 @@ $(document).ready(function(){
       return this.value;
     }).get();
 
-
     console.log(inputSize +" "+ inputTopping);
 
     var pizzaOrder = new Pizza(inputSize, inputTopping);
+    alert(pizzaOrder.calcPrice());
+
+    // $(".class").text(pizzaOrder.calcPrice);
+    $(".cost").text("$"+pizzaOrder.calcPrice());
 
 
   });
