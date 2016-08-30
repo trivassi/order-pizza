@@ -29,59 +29,18 @@
           <option>Large</option>
         </select>
         </div>
-        <fieldset data-role="controlgroup" data-type="horizontal">
-          <legend>Choose as many toppings as you'd like($1 per topping)</legend>
-            <div class="toppingsForm">
-              <label for="extraCheese">Extra Cheese</label>
-              <input type="checkbox" name="topping" id="extraCheese" value="extraCheese">
-              <label for="pepperoni">Pepperoni</label>
-              <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
-              <label for="ham">Ham</label>
-              <input type="checkbox" name="topping" id="ham" value="ham">
-              <label for="pineapple">Pineapple</label>
-              <input type="checkbox" name="topping" id="pineapple" value="pineapple">
-              <label for="mushrooms">Mushrooms</label>
-              <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
-              <label for="sausage">Sausage</label>
-              <input type="checkbox" name="topping" id="sausage" value="sausage">
-            </div>
-        </fieldset>
-        <!-- <div class="row">
-          <div class="col-md-3">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" name="standard" class="topping" value="pineapple">Pineapple
-              </label>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" name="standard" class="topping" value="ham">Ham
-              </label>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" name="standard" class="topping" value="ham">Ham
-              </label>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="true" checked>Yes
-          </label>
-          <label>
-            <input type="radio" name="question1" value="false">No
-          </label><hr>
-        </div> -->
+        <h3>Pick your toppings ($1 each): </h3>
+        <div class="form-group">
+          <label class="checkbox-inline"><input type="checkbox" class="topping-option" value="extra-cheese">Extra Cheese</input></label>
+          <label class="checkbox-inline"><input type="checkbox" class="topping-option" value="pepperoni">Pepperoni</input></label>
+          <label class="checkbox-inline"><input type="checkbox" class="topping-option" value="ham">Ham</input></label>
+          <label class="checkbox-inline"><input type="checkbox" class="topping-option" value="sausage">Sausage</input></label>
+          <label class="checkbox-inline"><input type="checkbox" class="topping-option" value="mushroom">Mushroom</input></label>
+        </div>
         <button type="submit" class="btn-success">Go!</button>
       </form>
-        <div>
-        <ul id="list">
-        </ul>
+      <div class="show-price">
+        <h2>Your total price will be: <span class="cost"></span></h2>
       </div>
     </div>
   </body>
